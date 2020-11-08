@@ -49,11 +49,11 @@ def extract_audio_file_url_from_soundgasm_audio_page_url(audio_page_url):
 
 
 def extract_audio_from_url(audio_url, current_user, target_filename):
-    os.makedirs("~/Téléchargements/Soundgasm/{}".format(current_user), exist_ok=True)
+    os.makedirs("/media2/others/audio/Soundgasm/{}".format(current_user), exist_ok=True)
     filename = target_filename.replace("/", "-")
     if len(filename) > 240:
         filename = filename[0:240] + "..."
-    filename = "~/Téléchargements/Soundgasm/{}/{}.m4a".format(current_user, filename)
+    filename = "/media2/others/audio/Soundgasm/{}/{}.m4a".format(current_user, filename)
     if not os.path.exists(filename) or os.path.getsize(filename) == 0:
         with session.get(audio_url, stream=True) as request:
             with open(filename + ".wip", 'wb') as f:
@@ -80,7 +80,7 @@ users = [
 
 
 def extract_audio_from_page_url(audio_page_url):
-    with open("~/Téléchargements/Soundgasm/cache", "a+") as cache:
+    with open("/media2/others/audio/Soundgasm/cache", "a+") as cache:
         if audio_page_url in cache.readlines():
             return
     if not is_soundgasm_audio_page_url(audio_page_url):
@@ -90,7 +90,7 @@ def extract_audio_from_page_url(audio_page_url):
     audio_file_url = extract_audio_file_url_from_soundgasm_audio_page_url(audio_page_url)
     if audio_file_url:
         extract_audio_from_url(audio_file_url, user, filename)
-        with open("~/Téléchargements/Soundgasm/cache", "a+") as cache:
+        with open("/media2/others/audio/Soundgasm/cache", "a+") as cache:
             cache.write(audio_page_url + "\n")
 
 

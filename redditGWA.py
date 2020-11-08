@@ -10,7 +10,7 @@ import soundgasm
 
 reddit = praw.Reddit("bot")
 
-top_submissions = reddit.subreddit('gonewildaudio').top(limit=None)
+top_submissions = reddit.subreddit('gonewildaudio').hot(limit=None)
 
 session = requests.Session()
 retry = Retry(connect=3, backoff_factor=0.5)
@@ -23,6 +23,7 @@ soundgasm.session = session
 errors = []
 
 for submission in tqdm(top_submissions, desc="posts", total=1000):
+    print(submission.url)
     if soundgasm.is_soundgasm_audio_page_url(submission.url):
         soundgasm.extract_audio_from_page_url(submission.url)
     elif soundgasm.is_soundgasm_user_page_url(submission.url):
