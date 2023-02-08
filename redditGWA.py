@@ -42,23 +42,23 @@ for submission in tqdm(top_submissions, desc="posts", total=1000):
                     continue
                 elif re.match("/r/[^/]+", audio_page_url):
                     continue
-                elif re.match("http(s)?://www.reddit.com/u/.+", audio_page_url):
+                elif re.match("http(s)?://www\.reddit\.com/u/.+", audio_page_url):
                     continue
-                elif re.match("http(s)?://www.reddit.com/user/.+", audio_page_url):
+                elif re.match("http(s)?://www\.reddit\.com/user/.+", audio_page_url):
                     continue
-                elif re.match("http(s)?://www.reddit.com/r/.+", audio_page_url):
+                elif re.match("http(s)?://www\.reddit\.com/r/.+", audio_page_url):
                     continue
-                elif re.match("http(s)?://www.reddit.com/r/.+/comments/.+", audio_page_url):
+                elif re.match("http(s)?://www\.reddit\.com/r/.+/comments/.+", audio_page_url):
                     continue
-                elif re.match("http(s)?://old.reddit.com/", audio_page_url):
+                elif re.match("http(s)?://old\.reddit\.com/", audio_page_url):
                     continue
-                elif re.match("http(s)?://redd.it/.+", audio_page_url):
+                elif re.match("http(s)?://redd\.it/.+", audio_page_url):
                     continue
-                elif re.match("http(s)?://.*imgur.com/.+", audio_page_url):
+                elif re.match("http(s)?://.*imgur\.com/.+", audio_page_url):
                     continue
-                elif re.match("http(s)?://.*pastebin.com/.+", audio_page_url):
+                elif re.match("http(s)?://.*pastebin\.com/.+", audio_page_url):
                     continue
-                elif re.match("http://chirb.it/.+", audio_page_url):
+                elif re.match("http://chirb\.it/.+", audio_page_url):
                     continue
                 else:
                     continue
