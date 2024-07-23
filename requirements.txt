@@ -12,7 +12,7 @@ Pygments==2.15.0
 reddit-cli==0.1
 redditcli==2.1.0
 reg==0.12
-regex==2020.10.28
+regex==2020.11.13
 repoze.lru==0.7
 requests==2.32.3
 six==1.16.0
