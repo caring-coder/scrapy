@@ -18,7 +18,7 @@ requests==2.32.2
 six==1.15.0
 soupsieve==2.0.1
 termcolor==1.1.0
-tqdm==4.66.3
+tqdm==4.66.4
 update-checker==0.18.0
 urllib3==1.26.19
 wcwidth==0.2.5
