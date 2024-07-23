@@ -7,7 +7,7 @@ clint==0.5.1
 idna==3.7
 praw==7.7.1
 prawcore==1.5.0
-prompt-toolkit==3.0.8
+prompt-toolkit==3.0.47
 Pygments==2.18.0
 reddit-cli==0.1
 redditcli==2.1.0
