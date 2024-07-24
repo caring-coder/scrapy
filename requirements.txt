@@ -17,7 +17,7 @@ repoze.lru==0.7
 requests==2.32.3
 six==1.16.0
 soupsieve==2.5
-termcolor==1.1.0
+termcolor==2.4.0
 tqdm==4.66.4
 update-checker==0.18.0
 urllib3==1.26.19
