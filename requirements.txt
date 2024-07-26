@@ -2,7 +2,7 @@ args==0.1.0
 beautifulsoup4==4.12.3
 certifi==2024.7.4
 chardet==5.2.0
-Click==7.1.2
+Click==8.1.7
 clint==0.5.1
 idna==3.7
 praw==7.7.1
