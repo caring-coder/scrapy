@@ -16,7 +16,7 @@ regex==2024.7.24
 repoze.lru==0.7
 requests==2.32.3
 six==1.16.0
-soupsieve==2.5
+soupsieve==2.6
 termcolor==2.4.0
 tqdm==4.66.5
 update-checker==0.18.0
