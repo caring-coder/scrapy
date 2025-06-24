@@ -14,7 +14,7 @@ redditcli==2.1.0
 reg==0.12
 regex==2024.7.24
 repoze.lru==0.7
-requests==2.32.3
+requests==2.32.4
 six==1.16.0
 soupsieve==2.6
 termcolor==2.4.0
