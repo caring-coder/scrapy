@@ -1,6 +1,6 @@
 args==0.1.0
 beautifulsoup4==4.13.5
-certifi==2025.8.3
+certifi==2025.10.5
 chardet==5.2.0
 Click==8.3.0
 clint==0.5.1
