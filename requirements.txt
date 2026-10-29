@@ -5,7 +5,7 @@ chardet==5.2.0
 Click==8.3.0
 clint==0.5.1
 idna==3.10
-praw==7.8.1
+praw==7.8.2
 prawcore==3.0.2
 prompt-toolkit==3.0.52
 Pygments==2.19.2
